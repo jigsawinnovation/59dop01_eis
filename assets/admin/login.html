@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="ระบบงานเพื่อบูรณาการฐานข้อมูล">
+    <meta name="keywords" content="ระบบงานเพื่อบูรณาการฐานข้อมูล">
+    <meta name="author" content="Sonchai058">
+    <link rel="shortcut icon" href="./images/image16.png" type="image/x-icon">
+    <link rel="icon" href="./images/image16.png" type="image/x-icon">
+    <title>ระบบงานเพื่อบูรณาการฐานข้อมูล</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/fontsset.css">
+</head>
+
+<body>
+    <div class="login">
+        <form class="form-signin" autocomplete="off">
+            <div class="row" style="position: relative;">
+                <div class="col-sm-6">
+                    <img class="img-responsive" src="./images/image9.png" alt="Chania">
+                </div>
+                <div style="position: absolute;" class="col-sm-offset-4 col-sm-8 hidden-xs">
+                    <h1 class='title'>THAI OLDER</h1>
+                    <h4>ระบบงานเพื่อบูรณาการฐานข้อมูลผู้สูงอายุ</h4>
+                </div>
+            </div>
+
+            <div class="row clearfix" style="clear: both">
+                <div class="col-sx-12 col-sm-12">
+                    <input type="text" class="form-control" name="username" placeholder="เลขประจำตัวประชาชน" required="" autofocus="" />
+                </div>
+                <div class="col-sx-12 col-sm-12">
+                    <input type="password" class="form-control" name="password" placeholder="รหัสผ่าน (พินโค้ด)" required="" />
+                </div>
+            </div>
+            <!-- <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button> -->
+            <h4 class="text-center">กรมกิจการผู้สูงอายุ</h4>
+            <h4 class="text-center">กระทรวงการพัฒนาสังคมและความมั่นคงของมนุษย์</h4>
+        </form>
+        <h4 class="text-center">พบปัญหาการใช้งานระบบกรุณาติดต่อผู้ดูแลระบบ</h4>
+        <h4 class="text-center">© สงวนลิขสิทธ์โดย กรมกิจการผู้สูงอายุ พัฒนาโดย บริษัท จิ๊กซอว์ อินโนเวชั่น จำกัด เวอร์ชั่น 1.0</h4>
+    </div>
+</body>
+<script>
+    $(document).keypress(function(e) {
+    if(e.which == 13) {
+       window.location.replace("./index.html");
+    }
+});
+</script>
+</html>

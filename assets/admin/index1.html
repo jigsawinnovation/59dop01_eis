@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="ระบบงานเพื่อบูรณาการฐานข้อมูล">
+    <meta name="keywords" content="ระบบงานเพื่อบูรณาการฐานข้อมูล">
+    <meta name="author" content="Sonchai058">
+    <link rel="shortcut icon" href="./images/image16.png" type="image/x-icon">
+    <link rel="icon" href="./images/image16.png" type="image/x-icon">
+    <title>ระบบงานเพื่อบูรณาการฐานข้อมูล</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="./js/favico.min.js"></script>
+
+    <link rel="stylesheet" href="./css/fontsset.css">
+    <link rel="stylesheet" href="./css/main1.css">
+</head>
+
+<body>
+    <div class="main">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#" title="THAI OLDER">
+                        <div class="row">
+                            <div class="col-sm-10 hidden-xs" style="padding-left: 20px;">
+                                <img width="55" height="55" src="./images/image9.png" alt="Chania">
+                            </div>
+                            <div class="col-sm-12 hidden-sm hidden-md hidden-lg">
+                                <img width="40" height="40" style="margin-top: -5px;" class="img-responsive" width="100%" src="./images/image9.png" alt="Chania">
+                            </div>
+                            <div class="col-sm-2 hidden-xs">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <!--
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Deals</a></li>
+                        <li><a href="#">Stores</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    -->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li title="Message">
+                            <a href="#"><img id="message" width="20px" height="16px" src="./images/Messaging-Message-icon.png"></a>
+                        </li>
+                        <li title="วนัสนันท์ กัณฑะวงศ์">
+                            <a href="#"><img src="./images/image76.png" class="profile img-circle border-1" alt="Cinque Terre" width="40" height="40"> วนัสนันท์ กัณฑะวงศ์</a>
+                        </li>
+                        <li title="Sign Out"><a href="./login.html"><span class="glyphicon glyphicon-log-out"></span> Sign Out</a></li>
+                        <li title="Help"><a href="./index.html"><span class="glyphicon glyphicon-question-sign"></span> Help</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="row w_container" style="margin-top: -20px;">
+            <div class="col-md-1 hidden-xs hidden-sm">
+                <div class="list-group">
+                    <a href="#" class="list-group-item text-center select"><span class="glyphicon glyphicon-picture"></span></a>
+                    <a href="#" class="list-group-item text-center"><span class="glyphicon glyphicon-adjust"></span></a>
+                    <a href="#" class="list-group-item text-center"><span class="glyphicon glyphicon-tint"></span></a>
+                    <a href="#" class="list-group-item text-center"><span class="glyphicon glyphicon-cloud"></span></a>
+                    <a href="#" class="list-group-item text-center"><span class="glyphicon glyphicon-qrcode"></span></a>
+                    <a href="#" class="list-group-item text-center"><span class="glyphicon glyphicon-tags"></span></a>
+                    <a href="#" class="list-group-item text-center"><span class="glyphicon glyphicon-map-marker"></span></a>
+                    <a href="#" class="list-group-item text-center"><span class="glyphicon glyphicon-calendar"></span></a>
+                    <a href="#" class="list-group-item text-center"><span class="glyphicon glyphicon-bullhorn"></span></a>
+                </div>
+            </div>
+            <div class="article col-xs-12 col-sm-12 col-md-11">
+     
+             
+<ul class="menu list-inline">
+      <li><a href="./index1.html"><span class="glyphicon glyphicon-globe"></span> Home</a></li>
+      <li><a href="./index2.html"><span class="glyphicon glyphicon-wrench"></span> Menu 1</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-stats"></span> Menu 2</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-apple"></span> Menu 3</a></li>
+    </ul>
+
+<!-- Styles -->
+<style>
+#chartdiv {
+  width: 100%;
+  height: 500px;
+}
+</style>
+
+<!-- Resources -->
+<script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+<script src="https://www.amcharts.com/lib/3/serial.js"></script>
+<script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+<link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+<script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+
+<!-- Chart code -->
+<script>
+var chart = AmCharts.makeChart("chartdiv", {
+    "type": "serial",
+    "theme": "light",
+    "legend": {
+        "equalWidths": false,
+        "useGraphSettings": true,
+        "valueAlign": "left",
+        "valueWidth": 120
+    },
+    "dataProvider": [{
+        "date": "2012-01-01",
+        "distance": 227,
+        "townName": "New York",
+        "townName2": "New York",
+        "townSize": 25,
+        "latitude": 40.71,
+        "duration": 408
+    }, {
+        "date": "2012-01-02",
+        "distance": 371,
+        "townName": "Washington",
+        "townSize": 14,
+        "latitude": 38.89,
+        "duration": 482
+    }, {
+        "date": "2012-01-03",
+        "distance": 433,
+        "townName": "Wilmington",
+        "townSize": 6,
+        "latitude": 34.22,
+        "duration": 562
+    }, {
+        "date": "2012-01-04",
+        "distance": 345,
+        "townName": "Jacksonville",
+        "townSize": 7,
+        "latitude": 30.35,
+        "duration": 379
+    }, {
+        "date": "2012-01-05",
+        "distance": 480,
+        "townName": "Miami",
+        "townName2": "Miami",
+        "townSize": 10,
+        "latitude": 25.83,
+        "duration": 501
+    }, {
+        "date": "2012-01-06",
+        "distance": 386,
+        "townName": "Tallahassee",
+        "townSize": 7,
+        "latitude": 30.46,
+        "duration": 443
+    }, {
+        "date": "2012-01-07",
+        "distance": 348,
+        "townName": "New Orleans",
+        "townSize": 10,
+        "latitude": 29.94,
+        "duration": 405
+    }, {
+        "date": "2012-01-08",
+        "distance": 238,
+        "townName": "Houston",
+        "townName2": "Houston",
+        "townSize": 16,
+        "latitude": 29.76,
+        "duration": 309
+    }, {
+        "date": "2012-01-09",
+        "distance": 218,
+        "townName": "Dalas",
+        "townSize": 17,
+        "latitude": 32.8,
+        "duration": 287
+    }, {
+        "date": "2012-01-10",
+        "distance": 349,
+        "townName": "Oklahoma City",
+        "townSize": 11,
+        "latitude": 35.49,
+        "duration": 485
+    }, {
+        "date": "2012-01-11",
+        "distance": 603,
+        "townName": "Kansas City",
+        "townSize": 10,
+        "latitude": 39.1,
+        "duration": 890
+    }, {
+        "date": "2012-01-12",
+        "distance": 534,
+        "townName": "Denver",
+        "townName2": "Denver",
+        "townSize": 18,
+        "latitude": 39.74,
+        "duration": 810
+    }, {
+        "date": "2012-01-13",
+        "townName": "Salt Lake City",
+        "townSize": 12,
+        "distance": 425,
+        "duration": 670,
+        "latitude": 40.75,
+        "dashLength": 8,
+        "alpha": 0.4
+    }, {
+        "date": "2012-01-14",
+        "latitude": 36.1,
+        "duration": 470,
+        "townName": "Las Vegas",
+        "townName2": "Las Vegas"
+    }, {
+        "date": "2012-01-15"
+    }, {
+        "date": "2012-01-16"
+    }, {
+        "date": "2012-01-17"
+    }, {
+        "date": "2012-01-18"
+    }, {
+        "date": "2012-01-19"
+    }],
+    "valueAxes": [{
+        "id": "distanceAxis",
+        "axisAlpha": 0,
+        "gridAlpha": 0,
+        "position": "left",
+        "title": "distance"
+    }, {
+        "id": "latitudeAxis",
+        "axisAlpha": 0,
+        "gridAlpha": 0,
+        "labelsEnabled": false,
+        "position": "right"
+    }, {
+        "id": "durationAxis",
+        "duration": "mm",
+        "durationUnits": {
+            "hh": "h ",
+            "mm": "min"
+        },
+        "axisAlpha": 0,
+        "gridAlpha": 0,
+        "inside": true,
+        "position": "right",
+        "title": "duration"
+    }],
+    "graphs": [{
+        "alphaField": "alpha",
+        "balloonText": "[[value]] miles",
+        "dashLengthField": "dashLength",
+        "fillAlphas": 0.7,
+        "legendPeriodValueText": "total: [[value.sum]] mi",
+        "legendValueText": "[[value]] mi",
+        "title": "distance",
+        "type": "column",
+        "valueField": "distance",
+        "valueAxis": "distanceAxis"
+    }, {
+        "balloonText": "latitude:[[value]]",
+        "bullet": "round",
+        "bulletBorderAlpha": 1,
+        "useLineColorForBulletBorder": true,
+        "bulletColor": "#FFFFFF",
+        "bulletSizeField": "townSize",
+        "dashLengthField": "dashLength",
+        "descriptionField": "townName",
+        "labelPosition": "right",
+        "labelText": "[[townName2]]",
+        "legendValueText": "[[value]]/[[description]]",
+        "title": "latitude/city",
+        "fillAlphas": 0,
+        "valueField": "latitude",
+        "valueAxis": "latitudeAxis"
+    }, {
+        "bullet": "square",
+        "bulletBorderAlpha": 1,
+        "bulletBorderThickness": 1,
+        "dashLengthField": "dashLength",
+        "legendValueText": "[[value]]",
+        "title": "duration",
+        "fillAlphas": 0,
+        "valueField": "duration",
+        "valueAxis": "durationAxis"
+    }],
+    "chartCursor": {
+        "categoryBalloonDateFormat": "DD",
+        "cursorAlpha": 0.1,
+        "cursorColor":"#000000",
+         "fullWidth":true,
+        "valueBalloonsEnabled": false,
+        "zoomable": false
+    },
+    "dataDateFormat": "YYYY-MM-DD",
+    "categoryField": "date",
+    "categoryAxis": {
+        "dateFormats": [{
+            "period": "DD",
+            "format": "DD"
+        }, {
+            "period": "WW",
+            "format": "MMM DD"
+        }, {
+            "period": "MM",
+            "format": "MMM"
+        }, {
+            "period": "YYYY",
+            "format": "YYYY"
+        }],
+        "parseDates": true,
+        "autoGridCount": false,
+        "axisColor": "#555555",
+        "gridAlpha": 0.1,
+        "gridColor": "#FFFFFF",
+        "gridCount": 50
+    },
+    "export": {
+        "enabled": true
+     }
+});
+</script>
+<br>
+<!-- HTML -->
+<div id="chartdiv"></div>
+
+                <!--
+                <div style="color: #333">
+                    <br>
+                    <br>
+                    <form>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                            <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-addon">Text</span>
+                            <input id="msg" type="text" class="form-control" name="msg" placeholder="Additional Info">
+                        </div>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                            <div class="input-group-btn">
+                                <button class="btn btn-default" type="submit">
+                                    <i class="glyphicon glyphicon-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                -->
+
+            </div>
+        </div>
+        <br>
+        <footer class="container-fluid text-center">
+            <div class="col-xs-12 col-sm-6 text-left">
+                © สงวนลิขสิทธ์โดย กรมกิจการผู้สูงอายุ
+            </div>
+            <div class="col-xs-12 col-sm-6 text-right">
+                พัฒนาโดย บริษัท จิ๊กซอว์ อินโนเวชั่น จำกัด เวอร์ชั่น 1.0
+            </div>
+        </footer>
+    </div>
+</body>
+<script>
+$(document).ready(function() {
+    var favicon = new Favico({
+        type: 'rectangle',
+        animation: 'slide',
+        elementId: 'message'
+    });
+    favicon.badge(0);
+
+    setTimeout(function(){favicon.badge(1);},500);
+    setTimeout(function(){favicon.badge(2);},1000);
+    setTimeout(function(){favicon.badge(3);},1500);
+    setTimeout(function(){favicon.badge(99);},2000);        
+
+});
+</script>
+
+</html>

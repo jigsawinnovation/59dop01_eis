@@ -1,0 +1,284 @@
+
+/* Set the fixed height of the footer here */
+#footer {
+  height: 50px;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+#summary,#table,#map{
+  cursor:pointer;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+/*
+.navbar-inverse{
+  background:rgba(168, 193, 208, 0.8);
+}*/
+.tab-active{
+  color:#fff !important;
+  background:rgba(0, 0, 0, 0.8);
+
+}
+.tablist-left {
+    width: 25%;
+    display: inline-block;
+}
+.tablist-content {
+    width: 60%;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 5%;
+}
+.highcharts-credits{
+  display: none;
+}
+.bg-report{
+    background-color: #FFF;
+    margin: -20px;
+}
+.ibox-content{
+    background-color: #FFF !important;
+}
+.wrapper-content{
+    background-color: #FFF !important;
+}
+.btn-search{
+  font-size: 16px;
+  border-top: 1px solid #CCC;
+  border-bottom: 1px solid #CCC;
+  border-left: 1px solid #CCC;
+  border-right: 0px solid #CCC;
+  border-radius: 5px 0px 0px 5px;
+  color: #1085CE;
+  height: 40px;
+  background-color: #FFF;
+}
+.input-search{
+  padding: 8px !important;
+  height: 40px;
+  width: 100%;
+  border-radius: 0px 5px 5px 0px;
+  border-top: 1px solid #CCC;
+  border-bottom: 1px solid #CCC;
+  border-left: 0px solid #CCC;
+  border-right: 1px solid #CCC;
+  font-family: 'ThaiSansNeue',Helvetica,Arial,sans-serif;
+}
+
+.input-text{
+  margin: 2px;
+  padding: 8px !important;
+  height: 35px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #CCC;
+  font-family: 'ThaiSansNeue',Helvetica,Arial,sans-serif;
+}
+.report-btn-search{
+  padding: 5px;
+  width: 100%;
+  height: 40px;
+  background-color: #2f4050 !important;
+  border-radius: 5px !important;
+  border: 1px solid #2f4050 !important;
+  color: #FFFFFF !important;
+  font-size: 20px !important;
+  font-family: 'ThaiSansNeue',Helvetica,Arial,sans-serif;
+}
+.bg-tab{
+  background: rgba(255, 255, 255, 0.5)!important;;
+}
+.font-tab{
+  font-size: 18px;
+}
+.font-icon-tab{
+  font-size: 22px;
+}
+.ui-widget-content{
+  border:0px;
+}
+.report-table{
+  border-radius: 5px !important;
+  border: 1px solid #a3c3db !important;
+}
+.report-th{
+  background-color: #1675bb !important;
+  text-align: center !important;
+  border: 1px solid #a3c3db !important;
+  color: #FFF;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: 100 !important;
+}
+.report-td-a{
+  font-size: 20px;
+  background-color: #ffffff !important;
+  border: 1px solid #a3c3db !important;
+  font-weight: 100 !important;
+  padding: 5px;
+  color: #333;
+}
+.report-td-b{
+  font-size: 20px;
+  background-color: #f9f9f9 !important;
+  border: 1px solid #a3c3db !important;
+  font-weight: 100 !important;
+  padding: 5px;
+  color: #333;
+}
+.report-td-sum{
+  background-color: #92CFFB !important;
+  border: 1px solid #a3c3db !important;
+  color: #333;
+  padding: 5px;
+  font-size: 18px;
+  font-weight: 100 !important;
+}
+.center{
+  text-align: center;
+}
+.left{
+  text-align: left;
+}
+.right{
+  text-align:right;
+}
+.go_to_table_area{
+    color: #1980C9;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+#show_map {
+    width:100%;
+    height: 800px;
+    margin-top: -23px;
+    margin-left: -1px;
+    margin-right: 0px !important;
+    margin-bottom: -100px;
+}
+#show_info{
+  width: 250px;
+  height: 150px;
+}
+#show_info>.title_identify{
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+#show_info>.text_identify{
+  font-size: 20px;
+  color: #333;
+}
+.bg_info{
+  background-image: url('../../../../assets/modules/report/images/bg_info.png');
+  min-height: 95px;
+
+}
+
+#chartdiv {
+width: 100%;
+height: 500px;
+}
+
+/**
+Menu on mobile
+*/
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #F8F9FD;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 3px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #111;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #435CDA;
+}
+.sidenav-name{
+    border-bottom: 1px solid #DDD !important;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 40px;
+    margin-left: 50px;
+}
+.report-home{
+  font-size:30px;
+  cursor:pointer;
+  background:rgba(240, 240, 240, 0.8);
+  text-align: center;
+  height: 42px;
+  width: 45px;
+}
+.report-name{
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 30px;
+    color: #1675bb;
+    font-weight: lighter;
+    text-overflow: ellipsis;
+    display: inline-block;
+    max-width: 100%;
+}
+#page-content {
+    margin-top: 50px;
+    transition: margin-left .5s;
+    padding: 16px;
+}
+#menu-navbar{
+    padding-bottom: 0px;
+    height: 42px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 5px;}
+  .sidenav a {font-size: 18px;}
+}
+.navbar-fixed-top{
+  background: #FFF;
+  border-bottom: 1px solid #EEE !important;
+  color: #000;
+}
+/**
+map Detail
+*/
+.mapTitle{
+  display: none;
+  z-index:1;
+  position:absolute;
+  text-align:center;
+  top:90px;
+  right:40px;
+  color:#000000;
+  width:280px;
+  padding:3px;
+  margin:0px;
+  font-size:20px;
+  /*border:#999 1px solid;*/
+  border-radius: 5px;
+  background-color:#FFFFFF;
+  -webkit-box-shadow: 5px 5px 10px #888888;
+}
